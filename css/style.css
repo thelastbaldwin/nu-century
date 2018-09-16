@@ -3,8 +3,37 @@ body {
 }
 
 /* general classes */
+
+header {
+    background-color: #003a99;
+    color: #fff;
+    padding: 1% 0;
+    margin-bottom: 2%;
+}
+
+header h1{
+    margin: 0 0 10px 0;
+}
+
+header h2 {
+    font-size: 10px;
+}
+
+header p {
+    font-size: 13px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+}
+
 .container {
     padding: 0 5%;
+}
+
+#services h3 {
+    text-align: left;
 }
 
 /* slideshow classes */
@@ -46,14 +75,48 @@ body {
 
 /* mobile breakpoint */
 @media screen and (max-width: 600px){
-    body {
-        color: green;
+}
+
+
+/* tablet breakpoint */
+@media screen and (min-width: 600.1px) and (max-width: 1024px){
+    #services > div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #services article {
+        flex: 0 1 49%;
     }
 }
 
 /* desktop breakpoint */
-@media screen and (min-width: 600.1px){
-    body {
-        color: purple;
+@media screen and (min-width: 1024.1px){
+    #services > div{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #services article {
+        flex: 0 1 30%;
+    }
+
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hero .slider {
+        flex: 0 1 74%;
+    }
+
+    .hero > p {
+        flex: 0 1 24%;
+    }
+
+    .slider {
+        padding-bottom: calc(9 / 16 * 74%);
     }
 }

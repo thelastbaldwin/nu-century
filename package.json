@@ -9,7 +9,7 @@
   "author": "",
   "main": "index.html",
   "scripts": {
-    "start": "browser-sync start --server 'src' -f 'src/**/*.html, src/**/*.js,src/**/*.css' --serveStatic 'src'",
+    "start": "browser-sync start --server 'src' -f ' **/*.html,  **/*.js, **/*.css' --serveStatic './'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
