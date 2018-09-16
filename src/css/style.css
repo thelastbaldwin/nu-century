@@ -1,0 +1,59 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* general classes */
+.container {
+    padding: 0 5%;
+}
+
+/* slideshow classes */
+.slider {
+    position: relative;
+    /* inverse aspect-ratio of 16 x 9 images */
+    padding-bottom: calc(9 / 16 * 100%);
+}
+
+.slide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: opacity 1s;
+    opacity: 0;
+}
+
+.slide.active {
+    z-index: 2;
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+}
+
+/* faq classes */
+.faq-question {
+    text-decoration: none;
+}
+
+.faq-answer {
+    display: none;
+}
+
+.faq-answer.active {
+    display: block;
+}
+
+/* mobile breakpoint */
+@media screen and (max-width: 600px){
+    body {
+        color: green;
+    }
+}
+
+/* desktop breakpoint */
+@media screen and (min-width: 600.1px){
+    body {
+        color: purple;
+    }
+}

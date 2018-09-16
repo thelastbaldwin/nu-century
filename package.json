@@ -1,0 +1,20 @@
+{
+  "name": "nu-century",
+  "version": "1.0.0",
+  "description": "browser-sync wrapper for nu-century",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thelastbaldwin/nu-century.git"
+  },
+  "author": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "browser-sync start --server 'src' -f 'src/**/*.html, src/**/*.js,src/**/*.css' --serveStatic 'src'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.13"
+  }
+}
