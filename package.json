@@ -15,6 +15,6 @@
   "keywords": [],
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.18.13"
+    "browser-sync": "^2.26.7"
   }
 }
