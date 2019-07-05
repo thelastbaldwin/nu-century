@@ -20,9 +20,6 @@ document.addEventListener("DOMContentLoaded", function(){
     faqSection.addEventListener("click", function(event){
         if (event.target.matches(".faq-question")){
             event.preventDefault();
-            // answers.forEach(function(answer){
-            //     answer.classList.remove(faqActiveClass);
-            // });
             event.target.nextElementSibling.classList.toggle(faqActiveClass);
         }
     });
