@@ -53,6 +53,7 @@ header p {
 footer {
     background-color: #003a99;
     color: #fff;
+    padding: 2% 0;
 }
 
 footer h4 span {
@@ -66,6 +67,7 @@ footer a {
 
 footer h1 {
     font-size: 1.5em;
+    margin-top: 0;
 }
 
 .container {
@@ -104,7 +106,6 @@ footer h1 {
 }
 
 /* faq classes */
-
 #faq li {
     margin-bottom: 1em;
 }

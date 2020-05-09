@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", function(){
     const slides = document.querySelectorAll(".slide");
     const activeClass = "active";
     let slideIndex = 0;
-    const slideDelay = 2000;
-    const slideInterval = setInterval(function(){
+    const slideDelay = 3000;
+    setInterval(function(){
         ++slideIndex;
         slideIndex %= slides.length;
         slides.forEach(function(slide){
@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function(){
     }, slideDelay);
 
     //faq
-    const answers = document.querySelectorAll(".faq-answer");
     const faqSection = document.querySelector("#faq");
     const faqActiveClass = "active";
     faqSection.addEventListener("click", function(event){
